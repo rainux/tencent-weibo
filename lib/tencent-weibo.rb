@@ -1,7 +1,5 @@
-require 'tencent-weibo/version'
-
-module Tencent
-  module Weibo
-    # Your code goes here...
-  end
-end
+require 'oauth2'
+require 'tencent/weibo/strategy/auth_code'
+require 'tencent/weibo/access_token'
+require 'tencent/weibo/client'
+require 'tencent/weibo/version'
