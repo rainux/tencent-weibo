@@ -7,7 +7,7 @@ module Tencent
           format: :json,
           oauth_consumer_key: @client.app_key,
           access_token: @token,
-          openid: @params['openid'],
+          openid: @params['openid'] || @params[:openid],
           oauth_version: '2.a'
         }.merge(opts[:params])
         opts[:parse] = :json
