@@ -18,4 +18,5 @@ Gem::Specification.new do |gem|
   gem.require_paths = ['lib']
 
   gem.add_runtime_dependency 'oauth2', '~> 0.9.1'
+  gem.add_runtime_dependency 'multi_json', '~> 1.6'
 end

@@ -10,7 +10,7 @@ module Tencent
           openid: @params['openid'] || @params[:openid],
           oauth_version: '2.a'
         }.merge(opts[:params])
-        opts[:parse] = :json
+        opts[:parse] = :tencent_json
         super
       end
     end
