@@ -1,5 +1,6 @@
 OAuth2::Response.register_parser(:tencent_json, []) do |body|
   begin
+    body.force_encoding(Encoding::UTF_8)
     MultiJson.load(body)
   rescue MultiJson::LoadError => e
     if e.message.include?('lexical error: invalid bytes in UTF8 string.')
